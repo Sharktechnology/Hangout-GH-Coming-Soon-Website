@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Hangout-GH Coming Soon"
+description = "A responsive launch announcement for Hangout-GH, building anticipation with the official brand, live Ghana-time countdown, and verified social links."
+version = "1.0.0"
+id = "artifacts/hangout-gh-coming-soon"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 25640
+
+[services.development]
+run = "pnpm --filter @workspace/hangout-gh-coming-soon run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/hangout-gh-coming-soon", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/hangout-gh-coming-soon/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "25640"
+BASE_PATH = "/"
