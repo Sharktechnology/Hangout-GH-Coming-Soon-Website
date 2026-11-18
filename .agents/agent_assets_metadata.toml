@@ -1,0 +1,16 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "_3FBKviB4YJEbaUts8iz4"
+uri = "file://generated-artifacts/hangout-gh-coming-soon-upload.zip"
+type = "unspecified"
+title = "Download Hangout-GH Website Files"
+description = "Production-ready static website bundle for uploading to your hosting file manager. Extract the ZIP directly into the domain web root; upload instructions are included."
+logical_id = "ace6aa9e-35d0-4307-985b-522731805883"
+content_hash = "sha256:d91769aa63dabb09475f7e4a0f78c7be74f306d010352a40a4f19c766672d1cb"
+size = 141975
+mtime_ms = 1795016312090
+storage_uri = "gcs://replit-rams-assets-riker/rams/assets/repl:671f2aba-23e4-4484-8651-48b9659c9fa1/ace6aa9e-35d0-4307-985b-522731805883/6c99b99e-88ba-4c1d-b6a0-7f971d4d6c9d"
+storage_version_token = "1795016329878534"
+content_type = "application/octet-stream"
